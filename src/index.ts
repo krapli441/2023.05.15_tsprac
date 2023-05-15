@@ -1,4 +1,4 @@
-console.log("타입스크립트야 반가워");
+console.log("hello worlds");
 
 let a = 1 + 2;
 let b = a + 3;
