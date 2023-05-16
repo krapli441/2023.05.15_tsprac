@@ -1,5 +1,5 @@
-let a: number = 1;
-let b: number = 2;
+let a = 1;
+let b = 2;
 
 function add(a: number, b: number): number {
   return a + b;
