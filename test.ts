@@ -1,8 +1,15 @@
-let a = 1;
-let b = 2;
-
-function add(a: number, b: number): number {
-  return a + b;
+function exampleOne(object: object) {
+  let value: Array<string> = [];
+  for (let key in object) {
+    value.push(key);
+  }
+  return value;
 }
 
-console.log(add(a, b));
+let test = {
+  name: "박준형",
+  age: "29",
+  job: "neat",
+};
+
+console.log(exampleOne(test));
