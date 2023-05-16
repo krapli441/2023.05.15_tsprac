@@ -1,9 +1,11 @@
-console.log("hello world");
-
 const a = 1;
 const b = 2;
 
-function c(a, b) {
+function moreFuction(): void {
+  console.log("hi");
+}
+
+function c(a: number, b: number): number {
   return a + b;
 }
 
