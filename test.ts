@@ -1,15 +1,9 @@
-function exampleOne(object: object) {
-  let value: Array<string> = [];
-  for (let key in object) {
-    value.push(key);
+function createElement(tagName: string, props: object) {
+  let propsString = "";
+  for (let key in props) {
+    propsString += ` ${key}=${props[key]}`;
   }
-  return value;
+  return `<${tagName}${propsString}></${tagName}>`;
 }
 
-let test = {
-  name: "박준형",
-  age: "29",
-  job: "neat",
-};
-
-console.log(exampleOne(test));
+console.log(createElement("div", { class: "training", id: "typescript" }));
