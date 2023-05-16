@@ -1,10 +1,8 @@
-import { daegun } from "./dj";
+let a: number = 1;
+let b: number = 2;
 
-const a = 1;
-const b = 2;
-
-function c(a: number, b: number): number {
+function add(a: number, b: number): number {
   return a + b;
 }
-console.log(daegun("대건입니다"));
-console.log(c(a, b));
+
+console.log(add(a, b));
