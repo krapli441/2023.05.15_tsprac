@@ -1,7 +1,11 @@
-// * 매개변수를 배열로 받을 예정.
-// * 자바스크립트로 변환하면 typeof(arrayData) === string과 같음.
+/**
+ * @ params {array} arradyData
+ * @ params {string} insertData
+ * @ return {array} 문자열로 된 배열.
+ * 
+ * 내가 만든 스니펫
+ *  */
 
-let data = ["최대건", "정성철", "허진", "이세민"];
 
 function first(arrayData: string[], value: string): string[] {
   // 1. 첫번째 배열 인덱스의 값을 변환하는 함수를 만들고 싶다. - 의도를 써놓는 것을 의사 코드 (sudo code)라고 한다.
@@ -11,6 +15,7 @@ function first(arrayData: string[], value: string): string[] {
   return arrayData;
 }
 
+let data = ["최대건", "정성철", "허진", "이세민"];
 console.log(first(data, "강지민"));
 
 function second(arrayData: string[], value: string): string[] {
